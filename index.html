@@ -41,27 +41,27 @@
 
   <body>
     <div
-      class="relative font-sans font-bold text-9xl text-gray-100 w-full h-full bg-[url('./assets/waves.png')]"
+      class="lg:relative lg:flex-none lg:p-0 p-8 flex flex-col font-sans font-bold text-7xl lg:text-9xl text-gray-100 w-full bg-repeat overflow-x-clip min-h-screen h-fit bg-[url('./assets/waves.png')]"
     >
-      <div class="absolute top-80 left-1/4">NYC</div>
+      <div class="lg:absolute lg:top-80 lg:left-1/4">NYC</div>
+      <div class="lg:absolute lg:top-20 lg:left-20">KEEBS</div>
+      <div class="lg:absolute lg:top-40 lg:right-1/4">SHOP</div>
       <img
-        class="absolute top-20 left-[-240px]"
-        src="./assets/scattered-keys.png"
-      />
-      <div class="absolute top-20 left-20">KEEBS</div>
-      <div class="absolute top-40 right-1/4">SHOP</div>
-      <img
-        class="absolute top-60 left-1/2 -translate-x-1/2"
+        class="absolute lg:top-60 left-1/2 lg:-translate-x-1/2 translate-x-1/2 z-10 lg:w-fit w-24"
         src="./assets/switch.png"
       />
+      <img
+        class="lg:absolute lg:top-20 lg:left-[-240px] hidden lg:block"
+        src="./assets/scattered-keys.png"
+      />
       <div
-        class="absolute w-64 bottom-1/2 right-20 text-lg font-normal uppercase"
+        class="lg:absolute w-64 lg:bottom-1/2 lg:right-20 text-lg font-normal uppercase"
       >
         A temporary pop-up coming soon to New york City featuring keyboards,
         switches, and keycaps
       </div>
       <div
-        class="w-[400px] absolute bottom-1/4 right-20 font-normal uppercase text-lg flex flex-col gap-2"
+        class="lg:w-[400px] w-fit lg:pt-0 pt-12 lg:absolute lg:bottom-1/4 lg:right-20 font-normal uppercase text-lg flex flex-col lg:gap-2 gap-4"
       >
         <p id="description">Be the first to know when we open</p>
         <form
@@ -72,11 +72,11 @@
           <input
             name="email"
             id="email"
-            class="w-full h-12 px-4 text-lg font-normal text-gray-800 bg-gray-100 border rounded-lg"
+            class="lg:w-full w-3/4 h-12 px-4 text-lg font-normal text-gray-800 bg-gray-100 border rounded-lg"
             type="text"
             placeholder="Your email address"
           />
-          <button class="w-16 h-fit text-lg rounded-lg group">
+          <button class="lg:w-16 w-12 h-fit text-lg rounded-lg group">
             <img
               class="block group-hover:hidden"
               src="./assets/unselected-btn.png"
